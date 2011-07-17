@@ -1,0 +1,12 @@
+#{extends 'main.html' /}
+
+<section>
+
+	<h2>Tasks result: ${list.totalCount}</h2>
+	<ul>
+		#{list items:list.objects, as:'task'}
+			<li>${task.id} - ${task.label}</li>
+		#{/list}
+	</ul>
+
+</section>

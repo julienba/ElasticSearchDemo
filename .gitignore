@@ -1,0 +1,10 @@
+.classpath
+.project
+data
+.settings
+tmp                                                                                                                                                                                                  
+dist
+lib
+eclipse
+commands.pyc
+test-result

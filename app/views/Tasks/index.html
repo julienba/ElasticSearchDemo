@@ -1,0 +1,28 @@
+#{extends 'main.html' /}
+
+<section>
+
+	<h2>Tasks:</h2>
+	<ul>
+		#{list items:tasks, as:'task'}
+			<li>${task._key()} - ${task.label}</li>
+		#{/list}
+	</ul>
+
+</section>
+
+<section>
+	<h2>Search:</h2>
+	<form action="@{Tasks.search()}" method="POST">
+		<input type="text" name="label" id="label"/>                                                                                                                     
+		<input type="submit" value="Search it !" id="search" />
+	</form>	
+</section>
+
+<section>
+	<h2>Create:</h2>
+	<form action="@{Tasks.create()}" method="POST">
+		<input type="text" name="label" id="label"/>                                                                                                                     
+		<input type="submit" value="Create it !" id="create" />
+	</form>
+</section>
