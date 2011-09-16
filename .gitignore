@@ -2,7 +2,7 @@
 .project
 data
 .settings
-tmp                                                                                                                                                                                                  
+tmp
 dist
 lib
 eclipse
